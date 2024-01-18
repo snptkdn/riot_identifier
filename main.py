@@ -9,8 +9,6 @@ cred = credentials.Certificate('cred.json')
 app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-TOKEN = "MTE5NzUwNjQzNjE3MTgzNzUxMQ.G994qr.eSWuNq7CnOosaIyEG9BQpDoRlhI4PCRDBpleJo"
-
 intents = discord.Intents.default()#適当に。
 client = discord.Client(intents=intents)
 tree = app_commands.CommandTree(client)
